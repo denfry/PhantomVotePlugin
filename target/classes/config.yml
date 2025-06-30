@@ -1,5 +1,0 @@
-language: ru
-voting:
-  threshold: 0.5
-worlds:
-  - world
