@@ -1,0 +1,22 @@
+name: PhantomVotePlugin
+version: '1.0'
+main: net.denfry.phantomVotePlugin.PhantomVotePlugin
+api-version: '1.21'
+load: STARTUP
+authors: [ denfry, Aqurik13 ]
+commands:
+  vote:
+    description: Vote to kill phantoms.
+    usage: /<command> yes|no
+    permission: phantomvote.vote
+  phantomvote:
+    description: Manage phantom voting.
+    usage: /<command> status|reloadlang|reload|enable
+    permission: phantomvote.admin
+permissions:
+  phantomvote.vote:
+    description: Allows players to vote for killing phantoms.
+    default: true
+  phantomvote.admin:
+    description: Allows access to admin commands like status, reloadlang, reload, and enable.
+    default: op
